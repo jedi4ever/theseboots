@@ -1,8 +1,11 @@
 Several projects are implementing bootstrapping a 'vanilla' system:
 
+We all know that installing software and managing it, should be done by config management systems.
+But what if you can't run it yet, because you are missing dependencies?
+
 F.i. both puppet, vagrant, vagrant, veewee, fog all have need to bootstrap ruby on machine
 
-The goal of this project to a bundle these efforts in shared gem that can create templates.
+The goal of this project to a bundle these efforts in a shared gem that can create templates.
 An additional step could be to handle the ssh bootstrap itself but that's for the future.
 
 Invoking would be typical:
@@ -12,6 +15,8 @@ Invoking would be typical:
 		[ "chef", { version => "0.9.14", type => "gem", ...],
 		[ "puppet", { version => "2.6.14", type => "system", ...],
 </pre>
+
+platform would something like "ubuntu-10.10-i386" or "debian-...-x64"
 
 This would result in some bash code that can be execute on a box (potentially over ssh)
 
@@ -37,4 +42,8 @@ apt-get install puppet
 
 This is currently an idea, but I'm going to make a headstart for my [mccloud](http://github.com/jedi4ever/mccloud) and [veewee](http://github.com/jedi4ever/veewee)
 
-Let me know if you want to collaborate on this
+Let me know if you want to collaborate on this. 
+
+Patrick
+
+P.S.  I'm not sure where this goes, and it could be that each vendor has to implement it himself, we'll see. Anyway, I'm happy to contribute the scripts if this project becomes obsolete
