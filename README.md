@@ -37,8 +37,17 @@ gem install chef
 apt-get install puppet
 </pre>
 
-- Additional options would be to set options like proxies, paths, ....
+- Additional options would be to things like proxies, paths, ....
 - Or for python based, do the same
+
+## What about knife bootstrap?
+
+I'm aware that the ['knife bootstrap'](http://wiki.opscode.com/display/chef/Knife+Bootstrap) uses scripts that you can extend. But 
+
+- In some cases you don't want to install the dependency of chef (has native gems f.i.)
+- I would like to get only puppet going
+- I would like to choose the way the scripts is execute: so maybe not chef doing an ssh, but using [rundeck](http://rundeck.org), or fog.ssh or why not vnc or rdp)
+- And they can be reused in the java world [jclouds](http://jclouds.org)
 
 This is currently an idea, but I'm going to make a headstart for my [mccloud](http://github.com/jedi4ever/mccloud) and [veewee](http://github.com/jedi4ever/veewee)
 
