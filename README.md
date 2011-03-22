@@ -1,3 +1,4 @@
+## The goal
 Several projects are implementing bootstrapping a 'vanilla' system:
 
 We all know that installing software and managing it, should be done by config management systems.
