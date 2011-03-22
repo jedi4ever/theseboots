@@ -50,6 +50,10 @@ I'm aware that the ['knife bootstrap'](http://wiki.opscode.com/display/chef/Knif
 - I would like to choose the way the scripts is execute: so maybe not chef doing an ssh, but using [rundeck](http://rundeck.org), or fog.ssh or why not vnc or rdp)
 - And they can be reused in the java world [jclouds](http://jclouds.org)
 
+## What about rvm?
+Rvm does a great job at integrating different version of ruby, BUT it always compiles from source . I know there have been efforts to make it work offline, but still it's compile from source.
+
+
 This is currently an idea, but I'm going to make a headstart for my [mccloud](http://github.com/jedi4ever/mccloud) and [veewee](http://github.com/jedi4ever/veewee)
 
 Let me know if you want to collaborate on this. 
