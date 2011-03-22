@@ -3,7 +3,7 @@ Several projects are implementing bootstrapping a 'vanilla' system:
 We all know that installing software and managing it, should be done by config management systems.
 But what if you can't run it yet, because you are missing dependencies?
 
-F.i. both [puppet](http://puppetlabs.com), [vagrant](http://vagrantup.com), [chef](http://opscode.com), veeewee[http://github.com/jedi4ever/veewee], [fog](http://github.com/geemus/fog) all have need to bootstrap ruby on machine. 
+F.i. both [puppet](http://puppetlabs.com), [vagrant](http://vagrantup.com), [chef](http://opscode.com), [veewee](http://github.com/jedi4ever/veewee), [fog](http://github.com/geemus/fog) all have need to bootstrap ruby on machine. 
 
 The goal of this project to a bundle these efforts in a shared gem that can create templates.
 An additional step could be to handle the ssh bootstrap itself but that's for the future.
